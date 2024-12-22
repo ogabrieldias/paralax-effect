@@ -119,7 +119,12 @@ section {
 	display: inline-block;
 	color: transparent;
 	-webkit-text-stroke: 1px var(--pr-color);
+	font-size: 2.5rem;
+	padding: 30px;
 }
+
+
+
 
 .header__img {
 	position: absolute;
@@ -129,6 +134,7 @@ section {
 	right: 100px;
 	clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
 	overflow: hidden;
+	background-position: left center;
 }
 
 .header__img img {
@@ -217,6 +223,7 @@ section {
 .benefits__item {
 	list-style: none;
 	width: calc(33.33% - 27px);
+	margin-bottom: 5rem;
 }
 
 .benefits__num {
@@ -272,6 +279,13 @@ section {
 	object-fit: cover;
 }
 
+/* description_portolio */
+.description_portfolio {
+	text-align: center;
+	margin-top: 5px;
+	background-color: #CD8A3F;
+}
+
 /* serv ********/
 .serv__item {
 	position: relative;
@@ -287,6 +301,7 @@ section {
 	top: 50%;
 	right: 0;
 	transform: translateY(-50%);
+	text-align: center;
 }
 
 .serv__item-arrow img {
@@ -298,9 +313,13 @@ section {
 }
 
 .serv__item-txt {
-	font-size: 50px;
+	font-size: 40px;
 	color: #4b4b4b;
 	text-transform: uppercase;
+}
+
+i.bx.bxl-whatsapp {
+	font-size: 30px;
 }
 
 /* footer ********/
