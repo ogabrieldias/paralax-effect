@@ -216,6 +216,7 @@ section {
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 40px;
+	column-gap: 32.8rem;
 	width: 100%;
 	height: auto;
 }
@@ -224,6 +225,7 @@ section {
 	list-style: none;
 	width: calc(33.33% - 27px);
 	margin-bottom: 5rem;
+	
 }
 
 .benefits__num {
@@ -231,11 +233,19 @@ section {
 	font-size: 60px;
 	color: transparent;
 	-webkit-text-stroke: 1px var(--pr-color);
+	text-align: left;
 }
 
 .benefits__p {
 	font-size: 20px;
 	color: #4b4b4b;
+}
+
+#benefits__id {
+	text-align: center;
+	margin-left: -15rem;
+    margin-right: -15rem;
+
 }
 
 /* work ********/
