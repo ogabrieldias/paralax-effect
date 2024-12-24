@@ -5,11 +5,16 @@
 	--second-color: #0a0a0a;
 	--cubicbz: cubic-bezier(.9, 0, .1, 1);
 	--fz-big: 60px;
+	--bg-color: #fdfdfd;
+    --text-color: #333;
+    --main-color: #000000;
+    --white-color: #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, .2);
 }
 
 * {
 	box-sizing: border-box;
-	font-family: 'Syne', sans-serif;
+	font-family: 'Syne', sandiretoraprincipals-serif;
 	font-weight: 800;
 	margin: 0;
 	padding: 0;
@@ -43,8 +48,76 @@ section {
 }
 
 /* Paralax Effect On GSAP **********************************/
+
+
+/* header__navegation ********/
+
+
+.header__navegation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 7%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    transition: .5s;
+    
+}
+
+
+.header.sticky {
+    background: var(--bg-color);
+    box-shadow:  0 .1rem 1rem var(--shadow-color);
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--cor-destaque);
+    font-weight: 600;
+    cursor: default;
+    margin-right: auto;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 1.7rem;
+    color: var(--white-color);
+    font-weight: 500;
+    margin-right: 3.5rem;
+}
+
+.header.sticky .navbar a {
+    color: var(--text-color);
+}
+
+.navbar a.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: .2rem;
+    bottom: -6px;
+    background: var(--white-color);
+}
+
+.header.sticky .navbar a::before { /* Cor do Sticky(barra em baixo da letra) */
+    background: var(--main-color);
+    opacity: .7; 
+}
+
+.header.sticky .navbar a.active { /* Cor da letra ativa */
+    color: var(--main-color);
+}
+
+
+
+
+
 /* header ********/
-.header {
+.main__header {
 	position: relative;
 	display: flex;
 	padding: 0 70px;
