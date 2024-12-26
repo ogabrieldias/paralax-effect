@@ -173,40 +173,40 @@ document.addEventListener("DOMContentLoaded", function () {
 	serv();
 
 	//sticky serv
-	// ================ menu icon navbar ================
-	let menuIcon = document.querySelector('#menu-icon');
-	let navbar = document.querySelector('.navbar');
-	let navLinks = document.querySelectorAll('header nav a');
+// ================ menu icon navbar ================
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+let navLinks = document.querySelectorAll('header nav a');
 
-	// Menu icon click event
-	menuIcon.onclick = () => {
-	menuIcon.classList.toggle('bx-x');
-	navbar.classList.toggle('active');
-	};
+// Menu icon click event
+menuIcon.onclick = () => {
+  menuIcon.classList.toggle('bx-x');
+  navbar.classList.toggle('active');
+};
 
-	// Scroll sections active link
-	let sections = document.querySelectorAll('section');
+// Scroll sections active link
+let sections = document.querySelectorAll('section');
 
-	window.onscroll = () => {
-	// Scroll sections active link
-	sections.forEach(seca => {
-		let top = window.scrollY;
-		let offset = seca.offsetTop - 150;
-		let height = seca.offsetHeight;
-		let id = seca.getAttribute('id');
+window.onscroll = () => {
+  // Scroll sections active link
+  sections.forEach(seca => {
+    let top = window.scrollY;
+    let offset = seca.offsetTop - 150;
+    let height = seca.offsetHeight;
+    let id = seca.getAttribute('id');
 
-		if (top >= offset && top < offset + height) {
-		navLinks.forEach(links => {
-			links.classList.remove('active');
-			document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-		});
-		}
-	});
+    if (top >= offset && top < offset + height) {
+      navLinks.forEach(links => {
+        links.classList.remove('active');
+        document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+      });
+    }
+  });
 
-	// Sticky navbar
-	let header = document.querySelector('.header');
-	header.classList.toggle('sticky', window.scrollY > 100);
-	};
+  // Sticky navbar
+  let header = document.querySelector('.header');
+  header.classList.toggle('sticky', window.scrollY > 100);
+};
 
 	// Remove menu icon when clicking on a nav link
 	navLinks.forEach(link => {
@@ -216,18 +216,22 @@ document.addEventListener("DOMContentLoaded", function () {
 	};
 	});
 
-
-	// Este trecho adiciona ou remove a classe sticky no header
-window.addEventListener("scroll", function() {
-	const header = document.querySelector(".header");
-	if (window.scrollY > 50) { // Quando a rolagem for maior que 50px
-		header.classList.add("sticky");
-	} else {
-		header.classList.remove("sticky");
-	}
-});
-
-	
+// ================ swiper ================
+var swiper = new Swiper(".mySwiper", {
+	slidesPerView: 1,
+	spaceBetween: 50,
+	loop: true,
+	grabCursor: true,
+	pagination: {                    
+	  el: ".swiper-pagination",
+	  clickable: true,
+	},
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+  });
+  
 
 	//footer
 	function footer() {

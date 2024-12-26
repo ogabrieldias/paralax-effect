@@ -16,6 +16,18 @@ document.querySelectorAll('.header__navegation a').forEach(link => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    if (luxy && typeof luxy.init === 'function') {
+        console.log('Luxy.js está carregado!');
+        luxy.init({
+            wrapper: '#luxy',
+            targets: '.header__navegation a, .work__item, .benefits__item',
+            wrapperSpeed: 0.08,
+        });
+    } else {
+        console.error('luxy.js não foi carregado corretamente ou falta a função init.');
+    }
+});
 
 
 
