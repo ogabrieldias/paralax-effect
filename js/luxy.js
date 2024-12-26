@@ -1,12 +1,24 @@
-/**
- * Written by Mineo Okuda on 01/03/18.
- *
- * Mineo Okuda - development + design
- * https://willstyle.co.jp
- * https://github.com/min30327
- *
- * MIT license.
- */
+// Serve para forçar o scroll padrão
+document.querySelectorAll('.header__navegation a').forEach(link => {
+    link.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId.startsWith('#')) {
+            e.preventDefault(); // Impede o comportamento padrão
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                // Realiza o scroll até o elemento
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    });
+});
+
+
+
+
 
 (function(root, factory) {
 	'use strict';
@@ -28,8 +40,8 @@
 	'use strict';
 	
 		var defaults = {
-			wrapper: '#luxy',
-			targets : '.luxy-el',
+			wrapper: '#luxy',		// Define o wrapper principal
+			targets : '.luxy-el',	// Define os elementos animados
 			wrapperSpeed: 0.08,
 			targetSpeed: 0.02,
 			targetPercentage: 0.1
@@ -89,9 +101,14 @@
 				this.settings = extend(defaults, options || {});
 				this.wrapper = document.querySelector(this.settings.wrapper);
 
-				if(this.wrapper==="undefined"){
+				// if(this.wrapper==="undefined"){ trocando pelo código abaixo
+				// 	return false;
+				// }
+
+				if (!this.wrapper) {
+					console.warn('Wrapper não encontrado.');
 					return false;
-				}
+				  }
 				this.targets = document.querySelectorAll(this.settings.targets);
 				document.body.style.height = this.wrapper.clientHeight + 'px';
 

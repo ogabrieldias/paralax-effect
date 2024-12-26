@@ -1,3 +1,17 @@
+// Verifique se o luxy.js está sendo corretamente inicializado. Normalmente, ele precisa ser configurado com um seletor para o wrapper que contém os elementos animados. No seu caso, você está usando o id="luxy".
+document.addEventListener('DOMContentLoaded', function () {
+    if (luxy && typeof luxy.init === 'function') {
+        luxy.init({
+            wrapper: '#luxy', // ID do wrapper principal
+            targets: '.header__navegation a, .work__item, .benefits__item', // Adicione os seletors dos elementos animados
+            wrapperSpeed: 0.08, // Ajuste conforme necessário
+        });
+    } else {
+        console.error('luxy.js não foi carregado corretamente ou falta a função init.');
+    }
+});
+// -----------------------------------------------------------------
+
 document.addEventListener("DOMContentLoaded", function () {
 
 	'use strict';
@@ -203,14 +217,16 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 
 
-	window.addEventListener("scroll", function() {
-		const header = document.querySelector(".header__navegation");
-		if (window.scrollY > 50) { // Quando a rolagem for maior que 50px
-			header.classList.add("sticky");
-		} else {
-			header.classList.remove("sticky");
-		}
-	});
+	// Este trecho adiciona ou remove a classe sticky no header
+window.addEventListener("scroll", function() {
+	const header = document.querySelector(".header");
+	if (window.scrollY > 50) { // Quando a rolagem for maior que 50px
+		header.classList.add("sticky");
+	} else {
+		header.classList.remove("sticky");
+	}
+});
+
 	
 
 	//footer

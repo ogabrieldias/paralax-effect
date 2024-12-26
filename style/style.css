@@ -21,9 +21,39 @@
 	font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background: var(--second-color);
 }
+
+#luxy {
+	position: relative;
+	overflow: hidden;
+}	
+
+/* ------------------------------------------ */
+.wrapp {
+    overflow: hidden; /* Garante que o conteúdo se comporte com scrolling virtual */
+}
+
+.header__navegation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px); /* Para um efeito moderno */
+}
+
+.header__navegation a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* ------------------------------------------ */
 
 /******************************************/
 section {
@@ -62,7 +92,6 @@ section {
     background-color: transparent;
     display: flex;
     align-items: center;
-    z-index: 1;
     transition: .5s;
     
 }
@@ -423,3 +452,8 @@ i.bx.bxl-whatsapp {
 .footer__div span {
 	display: inline-block;
 }
+
+
+
+/* BREAKPOINTS */
+
