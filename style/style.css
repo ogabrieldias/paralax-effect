@@ -446,14 +446,13 @@ body {
 	text-transform: uppercase;
 }
 
-/* testimonial swiper */
-
+/* testimonial swiper  */
 .testimonial-container {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    padding: 4rem 10rem;
+    padding: 5rem 1rem;
 }
 
 .testimonial-container .testimonial-wrapper {
@@ -461,10 +460,10 @@ body {
     max-width: 90rem;
     width: 100%;
     padding: 5rem;
-
 }
 
 .testimonial-wrapper .testimonial-box {
+    padding: 1rem;
     border-radius: 2rem;
     overflow: hidden;
 }
@@ -482,6 +481,61 @@ body {
 }
 
 .testimonial-slide img {
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: .5rem solid var(--bg-color);
+    outline: .5rem solid var(--main-color);
+}
+
+.testimonial-slide h3 {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+}
+
+.testimonial-slide p {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+
+/* testimonial_blog swiper */
+
+.testimonial-container-blog {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 4rem 10rem;
+}
+
+.testimonial-container-blog .testimonial-wrapper-blog {
+    position: relative;
+    max-width: 90rem;
+    width: 100%;
+    padding: 5rem;
+
+}
+
+.testimonial-wrapper-blog .testimonial-box-blog {
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.testimonial-content-blog .testimonial-slide-blog {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--bg-color);
+    border-radius: 2rem; 
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    padding: 3rem 5rem;
+    border-top: .8rem solid var(--main-color);
+    border-bottom: .8rem solid var(--main-color);
+}
+
+.testimonial-slide-blog img {
     width: 43rem;
     height: 21rem;
     object-fit: cover;
@@ -490,7 +544,7 @@ body {
     outline: 0.5rem solid var(--main-color);
 }
 
-.testimonial-slide img::after {
+.testimonial-slide-blog img::after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -507,21 +561,21 @@ body {
 }
 
 
-.testimonial-slide h3 {
+.testimonial-slide-blog h3 {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3rem;
     margin: 2rem 0;
 	padding-top: 2rem;
 }
 
-.testimonial-slide span {
+.testimonial-slide-blog span {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: .85rem;
 	color: #CD8A3F;
     
 }
 
-.testimonial-slide p {
+.testimonial-slide-blog p {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: .9rem;
     text-align: center;
@@ -546,37 +600,40 @@ body {
 	cursor: pointer;
   }
   
-  .button1 {
-	background-color: white; 
-	color: black; 
-	border: 2px solid var(--gold-color)
-  }
-  
-  .button1:hover {
-	background-color: var(--gold-color);
-	color: white;
-  }
+.button1 {
+background-color: white; 
+color: black; 
+border: 2px solid var(--gold-color)
+}
 
-.testimonial-box .swiper-button-next, 
-.testimonial-box .swiper-button-prev { 
+.button1:hover {
+background-color: var(--gold-color);
+color: white;
+}
+
+.testimonial-box-blog .swiper-button-next, 
+.testimonial-box-blog .swiper-button-prev { 
     color: var(--main-color);
 }
 
-.testimonial-box .swiper-button-next {
+.testimonial-box-blog .swiper-button-next {
     right: 0;
 }
 
-.testimonial-box .swiper-button-prev {
+.testimonial-box-blog .swiper-button-prev {
     left: 0;
 }
 
-.testimonial-box .swiper-pagination-bullet {
+.testimonial-box-blog .swiper-pagination-bullet {
     background: rgba(0, 0, 0, .8);
 }
 
-.testimonial-box .swiper-pagination-bullet-active {
+.testimonial-box-blog .swiper-pagination-bullet-active {
     background: var(--main-color);
 }
+
+
+
 
 /* icon whatsapp */
 i.bx.bxl-whatsapp {
