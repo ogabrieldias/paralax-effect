@@ -178,11 +178,11 @@ let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 let navLinks = document.querySelectorAll('header nav a');
 
-// Menu icon click event
-menuIcon.onclick = () => {
-  menuIcon.classList.toggle('bx-x');
-  navbar.classList.toggle('active');
-};
+// Menu icon click event que estava atrapalhando a linkar no blog.html
+// menuIcon.onclick = () => {
+//   menuIcon.classList.toggle('bx-x');
+//   navbar.classList.toggle('active');
+// };
 
 // Scroll sections active link
 let sections = document.querySelectorAll('section');

@@ -5,6 +5,7 @@
 	--second-color: #0a0a0a;
 	--cubicbz: cubic-bezier(.9, 0, .1, 1);
 	--fz-big: 60px;
+	--gold-color: #CD8A3F;
 	--bg-color: #fdfdfd;
     --text-color: #333;
     --main-color: #000000;
@@ -59,7 +60,7 @@ body {
 /* ------------------------------------------ */
 
 /******************************************/
-#about, #about_us, #benefits, #portfolio, #services {
+#about, #about_us, #benefits, #portfolio, #services{
 	padding-top: 150px;
 	padding-bottom: 50px;
 	padding-bottom: 300px;
@@ -68,10 +69,13 @@ body {
 	overflow: hidden;
 }
 
-#services {
-	
+#blog{
+	padding-bottom: 50px;
+	padding-bottom: 300px;
+	padding-top: 165px;
+	height: 100%;
+	overflow: hidden;
 }
-
 
 .wrapp {
 	width: 100%;
@@ -407,7 +411,7 @@ body {
 .description_portfolio {
 	text-align: center;
 	margin-top: 5px;
-	background-color: #CD8A3F;
+	background-color: var(--gold-color);
 }
 
 /* serv ********/
@@ -457,10 +461,10 @@ body {
     max-width: 90rem;
     width: 100%;
     padding: 5rem;
+
 }
 
 .testimonial-wrapper .testimonial-box {
-    padding: 1rem;
     border-radius: 2rem;
     overflow: hidden;
 }
@@ -478,23 +482,80 @@ body {
 }
 
 .testimonial-slide img {
-    width: 14rem;
-    height: 14rem;
+    width: 43rem;
+    height: 21rem;
     object-fit: cover;
-    border-radius: 50%;
-    border: .5rem solid var(--bg-color);
-    outline: .5rem solid var(--main-color);
+    border-radius: 10px 100px;
+    border: 0.3rem solid var(--bg-color);
+    outline: 0.5rem solid var(--main-color);
 }
 
+.testimonial-slide img::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black; /* Cor do overlay */
+	opacity: 0; /* Começa invisível */
+	transition: opacity 0.3s ease; /* Efeito de transição suave */
+}
+
+.image-container:hover::after {
+	opacity: 0.5; /* Ajuste a opacidade para o valor desejado */
+}
+
+
 .testimonial-slide h3 {
-    font-size: 2.5rem;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
     margin: 2rem 0;
+	padding-top: 2rem;
+}
+
+.testimonial-slide span {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: .85rem;
+	color: #CD8A3F;
+    
 }
 
 .testimonial-slide p {
-    font-size: 1.4rem;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
     text-align: center;
+	padding-top: 1rem;
 }
+
+.button {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: var(--gold-color);
+	border: none;
+	border-radius: 28px 28px 28px 28px;
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.24);
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: .75rem;
+	margin: 4px 2px;
+	margin-top: 1.3rem;
+	transition-duration: 0.4s;
+	cursor: pointer;
+  }
+  
+  .button1 {
+	background-color: white; 
+	color: black; 
+	border: 2px solid var(--gold-color)
+  }
+  
+  .button1:hover {
+	background-color: var(--gold-color);
+	color: white;
+  }
 
 .testimonial-box .swiper-button-next, 
 .testimonial-box .swiper-button-prev { 
