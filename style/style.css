@@ -79,23 +79,55 @@ body {
 	overflow: hidden;
 }
 
-
+.title_blog {
+	margin-top: 17rem;
+    margin-bottom: -15rem;
+}
 /* --------------------------- */
-.blog {
+
+
+.blog{
+	
 	margin-top: 3.7rem;
 }
 
+.txt, .txt * {
+    font-family: Arial, sans-serif !important;
+}
+
 .blog_title {
+	
 	font-size: 40px;
 	text-align: center;
 	padding-top: 7rem;
 }
 
 .blog img {
+	
     display: block;
     margin: auto;
-    width: 67%;
+    width: 100%;
 
+}
+
+.subtitle_blog {
+	
+	font-size: 30px;
+	margin-top: 3rem;
+}
+
+.container_img_txt{
+	
+	display: block;
+	width: 67%;
+	margin: auto;
+	line-height: 1.5rem;
+}
+
+.container_img_txt h1, h2, h3, p {
+	
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 
@@ -109,6 +141,7 @@ body {
 }
 
 .content {
+	
 	width: 100%;
 	padding: 0 70px;
 }
