@@ -1,0 +1,2 @@
+28/12
+Ainda falta clonar a parte de blog, arrumar o menu, darkmode, alterar cores, e breakpoints
