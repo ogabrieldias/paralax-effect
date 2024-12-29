@@ -87,7 +87,6 @@ body {
 
 
 .blog{
-	
 	margin-top: 3.7rem;
 }
 
@@ -96,41 +95,70 @@ body {
 }
 
 .blog_title {
-	
 	font-size: 40px;
 	text-align: center;
 	padding-top: 7rem;
 }
 
 .blog img {
-	
     display: block;
     margin: auto;
     width: 100%;
 
 }
 
-.subtitle_blog {
-	
+.blog_subtitle {
 	font-size: 30px;
 	margin-top: 3rem;
+	color: #242424
+}
+
+.blog_subtitle_h4 {
+	font-size: 23px;
+	margin-top: 2rem;
+	color: #242424
 }
 
 .container_img_txt{
-	
+	background-color: #fdfdfd;
+	padding: 3rem;
 	display: block;
 	width: 67%;
 	margin: auto;
-	line-height: 1.5rem;
+	line-height: 1.7rem;
 }
 
 .container_img_txt h1, h2, h3, p {
-	
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
 
+.previous_next_blog p{
+	display: inline-block; /* Parágrafos na mesma linha */
+    margin: 23px 155px; /* Espaçamento horizontal */
+    line-height: 1; /* Garante alinhamento vertical correto */
+    font-size: 20px; /* Ajusta o tamanho da fonte */
+}
 
+.previous_next_blog {
+	display: flex; /* Habilita o uso de Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 30vh; /* Altura da seção */
+}
+
+.separator {
+	width: 2.8px;
+    height: 50px;
+    background-color: black;
+    margin: 0px 0px;
+}
+
+i.bx.bx-chevrons-left, i.bx.bx-chevrons-right {
+	font-size: 20px; /* Tamanho do ícone */
+    margin-right: 10px; /* Espaçamento entre a seta e o texto */
+    vertical-align: middle; /* Alinha o ícone verticalmente com o texto */
+}
 /* --------------------------- */
 
 .wrapp {
