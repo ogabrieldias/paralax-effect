@@ -208,14 +208,13 @@ window.onscroll = () => {
   header.classList.toggle('sticky', window.scrollY > 100);
 };
 
-	// Remove menu icon when clicking on a nav link
-	navLinks.forEach(link => {
-	link.onclick = () => {
-		menuIcon.classList.remove('bx-x');
-		navbar.classList.remove('active');
-	};
-	});
 
+
+	// Menu icon click event
+menuIcon.onclick = () => {
+	menuIcon.classList.toggle('bx-x');
+	navbar.classList.toggle('active');
+  };
 // ================ swiper ================
 var swiper = new Swiper(".mySwiper", {
 	slidesPerView: 1,
@@ -248,3 +247,83 @@ var swiper = new Swiper(".mySwiper", {
 	}
 	footer();
 });
+
+
+
+// <!-- SCRIPT PARA CONTAGEM DE NUMEROS E TESTIMONIAL -->
+
+	
+        // Função para animar os números
+        function animateCounters() {
+            const counters = document.querySelectorAll(".counter");
+            const speed = 200; // Velocidade da animação
+
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute("data-target");
+                    const count = +counter.innerText;
+
+                    // Incremento por frame
+                    const increment = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(updateCount, 20); // Ajuste do tempo
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                updateCount();
+            });
+        }
+
+        // Observador para ativar a contagem quando a seção for visível
+        const section = document.getElementById('counters');
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.disconnect(); // Para de observar após ativar a animação
+                }
+            });
+        }, { threshold: 0.5 }); // 50% da seção visível
+
+        observer.observe(section);
+    
+
+// <!-- /SCRIPT PARA CONTAGEM DE NUMEROS E TESTIMONIAL -->
+
+
+
+
+// SCRIPT PARA ÁREA DE ATUAÇÃO
+
+const menuItems = document.querySelectorAll('.menu-item');
+const paragraphs = document.querySelectorAll('.content p');
+const title = document.getElementById('#title_about_actuation');
+
+menuItems.forEach(item => {
+	item.addEventListener('click', () => {
+		const target = item.getAttribute('data-target');
+		paragraphs.forEach(p => {
+			p.classList.remove('active');
+			if (p.id === target) {
+				p.classList.add('active');
+				
+				title_about_actuation.textContent = item.textContent.replace(/\s?[▶]/g, '').trim() + ' ▼';
+
+			}
+		});
+	});
+});
+//  /SCRIPT PARA ÁREA DE ATUAÇÃO 
+
+
+// ================ dark light mode ================
+let darkModeIcon = document.querySelector('#darkMode-icon');
+darkModeIcon.onclick = () => {
+  darkModeIcon.classList.toggle('bx-sun');
+  document.body.classList.toggle('dark-mode');
+};
+
