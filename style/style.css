@@ -1271,7 +1271,7 @@ i.bx.bxl-whatsapp {
 
 @media (max-width: 992px) {
 	.main__header {
-		width: 112%;
+		width: 115%;
         height: 110vh;
 	}
 
@@ -1301,9 +1301,6 @@ i.bx.bxl-whatsapp {
 	.header__marq-star img {
 		height: 80%;
 	}	
-
-
-
 
 	.footer__div {
 		font-size: 2.1rem;
