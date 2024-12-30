@@ -60,6 +60,8 @@ body {
 	height: 80px;
 	margin-right: auto;
 }
+
+
 /* ------------------------------------------ */
 
 /******************** section **********************/
@@ -412,9 +414,6 @@ i.bx.bx-chevrons-left, i.bx.bx-chevrons-right {
 }
 
 
-
-
-
 /* header ********/
 .main__header {
 	position: relative;
@@ -521,6 +520,17 @@ i.bx.bx-chevrons-left, i.bx.bx-chevrons-right {
 	font-size: 30px;
     padding-right: 1.7rem;
 } 
+
+.bx.bx-moon {
+	color: #03001d;
+}
+.bx.bx-sun {
+	color: var(--gold-color);
+}
+
+.bx.bx-menu {
+	display: none;
+}
 
 .section-title {
 	position: relative;
@@ -1141,28 +1151,179 @@ i.bx.bxl-whatsapp {
 
 
 
+
 /* BREAKPOINTS */
+@media (max-width: 1545px) {
+	#menu-icon {
+        display: none;
+    }
+
+	.benefits__list {
+		column-gap: 17.7rem;
+	}
+
+	.work__wrapp {
+		row-gap: 280px;
+	}
+
+	.header__navegation {
+		padding: 1rem 2%;
+	}
+	
+	.footer__div {
+		font-size: 3.4rem;
+	}
+}
+
 
 @media (max-width: 1400px) {
-	
+	#menu-icon {
+        display: none;
+    }
+
+	.navbar a {
+		font-size: 1.5rem;
+		margin-right: 2rem;
+	}
+
+	.benefits__num {
+		font-size: 55px;
+	}
+
+	.benefits__p {
+		font-size: 18px;
+	} 
+
+	.benefits__list {
+		column-gap: 17.7rem;
+	}
+
+	.title_paralax {
+		font-size: 4.6rem;
+	}
+
+	.title .stroke {
+		font-size: 2.1rem;
+	}
+
+	.logo_footer_blog {
+		width: 380px;
+		height: 150px;
+	}
+
+	.footer__div {
+		font-size: 3.1rem;
+	}
 }
 
 
 @media (max-width: 1200px) {
-	
-}
+	#menu-icon {
+        display: none;
+    }
+
+	.navbar a {
+		font-size: 1.2rem;
+        margin-right: 2rem;
+    }
+
+	.logo_img_header {
+		width: 190px;
+        height: 80px;
+	}
+
+	.title_paralax {
+		font-size: 3.7rem;
+	}
+
+	.title .stroke {
+        font-size: 1.43rem;
+	}
+
+	#benefits {
+		height: 170%;
+	}
+
+	.benefits__num {
+		font-size: 55px;
+	}
+
+	.benefits__p {
+		font-size: 18px;
+	} 
+
+	.benefits__list {
+		column-gap: 17.7rem;
+	}
+
+	.logo_footer_blog {
+        width: 249px;
+        height: 130px;
+        margin-right: 2rem;
+	}
+
+	.footer__div {
+		font-size: 2.4rem;
+	}
+
+} 
 
 
 @media (max-width: 992px) {
-	
+	.main__header {
+		width: 112%;
+        height: 110vh;
+	}
+
+    .title_paralax {
+        font-size: 3.1rem;
+    }
+
+	.title .stroke {
+        font-size: 1.22rem;
+    }
+
+
+    .navbar a {
+        margin-right: 1rem;
+    }
+
+	.bx.bx-moon, .bx.bx-menu {
+		font-size: 21px;
+		padding-right: 1.0rem;
+	}
+
+	.header__marq-txt {
+		font-size: 25px;
+
+	}
+
+	.header__marq-star img {
+		height: 80%;
+	}	
+
+
+
+
+	.footer__div {
+		font-size: 2.1rem;
+	}
 }
 
 
-@media (max-width: 768px) {
-	
+ @media (max-width: 768px) {
+		.main {
+		width: 120%;
+		height: 120vh;
+	}
 }
 
 
 @media (max-width: 576px) {
 	
-}
+} 
+
+
+
+
+
