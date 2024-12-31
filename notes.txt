@@ -1,2 +1,11 @@
 28/12
 Ainda falta clonar a parte de blog, arrumar o menu, darkmode, alterar cores, e breakpoints
+
+31/12
+Breakpoints:
+
+1545PX TRABALHANDO A 1401PX -> OK
+1400PX TRABALHANDO A 12001PX -> OK 
+1200PX TRABALHANDO A  993PX -> OK
+992PX TRABALHANDO A 769PX -> OK
+768PX TRABALHANDO A 577PX -> EM ANDAMENTO

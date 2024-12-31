@@ -119,18 +119,26 @@ document.addEventListener("DOMContentLoaded", function () {
 			},
 			yPercent: 50
 		})
+		gsap.from('#about__num', {
+			x: (i, el) => (1 - parseFloat(el.getAttribute('data-speed'))),
+			scrollTrigger: {
+				trigger: '#about__list',
+				start: 'top bottom',
+				scrub: 2
+			}
+		})
 	}
 	about();
 
 
 	//benefits
 	function benefits() {
-		gsap.from('.benefits__num', {
+		gsap.from('#num__benefits', {
 			x: (i, el) => (1 - parseFloat(el.getAttribute('data-speed'))),
 			scrollTrigger: {
-				trigger: '.benefits__list',
+				trigger: '#num__benefits__list',
 				start: 'top bottom',
-				scrub: 1.9
+				scrub: 1.0
 			}
 		})
 	}
@@ -253,46 +261,48 @@ var swiper = new Swiper(".mySwiper", {
 // <!-- SCRIPT PARA CONTAGEM DE NUMEROS E TESTIMONIAL -->
 
 	
-        // Função para animar os números
-        function animateCounters() {
-            const counters = document.querySelectorAll(".counter");
-            const speed = 200; // Velocidade da animação
+	// Função para animar os números
+	function animateCounters() {
+		const counters = document.querySelectorAll(".counter");
+		const speed = 200; // Velocidade da animação
 
-            counters.forEach(counter => {
-                const updateCount = () => {
-                    const target = +counter.getAttribute("data-target");
-                    const count = +counter.innerText;
+		counters.forEach(counter => {
+			const updateCount = () => {
+				const target = +counter.getAttribute("data-target");
+				const count = +counter.innerText;
 
-                    // Incremento por frame
-                    const increment = target / speed;
+				// Incremento por frame
+				const increment = target / speed;
 
-                    if (count < target) {
-                        counter.innerText = Math.ceil(count + increment);
-                        setTimeout(updateCount, 20); // Ajuste do tempo
-                    } else {
-                        counter.innerText = target;
-                    }
-                };
+				if (count < target) {
+					counter.innerText = Math.ceil(count + increment);
+					setTimeout(updateCount, 20); // Ajuste do tempo
+				} else {
+					counter.innerText = target;
+				}
+			};
 
-                updateCount();
-            });
-        }
+			updateCount();
+		});
+	}
 
-        // Observador para ativar a contagem quando a seção for visível
-        const section = document.getElementById('counters');
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounters();
-                    observer.disconnect(); // Para de observar após ativar a animação
-                }
-            });
-        }, { threshold: 0.5 }); // 50% da seção visível
+	// Observador para ativar a contagem quando a seção for visível
+	const section = document.getElementById('counters');
+	const observer = new IntersectionObserver((entries, observer) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				animateCounters();
+				observer.disconnect(); // Para de observar após ativar a animação
+			}
+		});
+	}, { threshold: 0.5 }); // 50% da seção visível
 
-        observer.observe(section);
-    
+	observer.observe(section);
+
 
 // <!-- /SCRIPT PARA CONTAGEM DE NUMEROS E TESTIMONIAL -->
+
+
 
 
 
@@ -326,4 +336,13 @@ darkModeIcon.onclick = () => {
   darkModeIcon.classList.toggle('bx-sun');
   document.body.classList.toggle('dark-mode');
 };
+
+
+
+
+
+
+
+
+
 

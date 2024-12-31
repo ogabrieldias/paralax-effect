@@ -1479,22 +1479,227 @@ i.bx.bxl-whatsapp {
 
 
 @media (max-width: 768px) {
+	html {
+		-webkit-text-size-adjust: 70%;
+	}
 
+	.main__header {
+        width: 100%;
+        height: 100vh;
+    }
+
+	main {
+		width: 100%;
+		height: 100%;
+		overflow-x: hidden;
+	}
+
+    .navbar {
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 102vh;
+		width: 250px;
+		background-color: rgba(255, 255, 255, 0.15);
+		backdrop-filter: blur(12px);
+		box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+		list-style: none;
+		display: none;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+	.navbar a {
+		display: none;
+	}
+
+	.bx.bx-moon	 {
+        font-size: 3.7rem;
+		z-index: 1;
+    }
+
+	#menu-icon {
+        display: block;
+        z-index: 1;
+        font-size: 3.7rem;
+        margin-left: 2rem;
+    }
+	
+	.title_paralax {
+        font-size: 2.72rem;
+    }
+
+	.title .stroke {
+        font-size: 1.6rem;
+        width: 37rem;
+    }
+
+	.section-title {
+		font-size: 3.7rem;
+	}
+
+    .serv__item-txt {
+        font-size: 25px;
+    }
+
+    .serv__item-arrow img {
+        width: 100%;
+        height: 100%;
+    }
+	.about__img, .about__txt {
+		width: calc(55% - 35px);
+		height: auto;
+	}
+
+	#historia_about_benefits {
+        margin-left: -11rem;
+    }
+	
+	#equipe_juridica_about_benefits {
+		margin-left: 2rem;
+	}
+
+	#area_atuacao_about_benefits {
+		margin-left: 6rem;
+	}
+
+	.benefits__num {
+        font-size: 80px;
+	}
+
+	.benefits__item {
+		width: calc(83.33% - 27px);
+		text-align: center;
+	}
+
+	.benefits__p {
+        font-size: 37px;
+    }
+
+	.menu-item {
+		font-size: 1.7rem;
+		padding: 40px 0;
+	}
+
+	.content_actuation_area p.active {
+		font-size: 1.5rem;
+	}
+
+	.button1 {
+		font-size: 1.37rem;
+	}
+
+	
+	.work__item {
+    	position: relative;
+    	width: calc(100%);
+    	height: 170vh;
+	}
+
+	#title_counter {
+		margin-top: 11rem;
+		text-align: center;
+		color: var(--gold-color);
+		font-size: 2.7rem;
+	}
+	
+	.counter-section {
+		gap: 60px;
+	}
+
+	.counter-wrapper {
+		font-size: 37px;
+	}
+
+	.testimonial-container .testimonial-wrapper {
+		padding: 1.7rem;
+	}
+
+	.content_contact {
+		display: block;
+	}
+
+	.contact-info h2 {
+		font-size: 2rem;
+	}	
+
+	.contact-info p {
+		font-size: 1.4rem;
+	}
+
+	.form input, .form textarea, .form button {
+		font-size: 1.37rem;
+	}
+
+	.footer_blog_section {
+        padding: 150px 23px !important;
+    }
+	
+	.logo_footer_blog {
+        width: 300px;
+        height: 150px;
+    }
+
+	.footer__div {
+        font-size: 3.1rem;
+        text-align: center;
+    }
+
+	/* Início da página: blog_geral.html */
+	.testimonial-container-blog .testimonial-wrapper-blog {
+		padding: 2rem;
+	}
+
+	.testimonial-slide-blog h3 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+	.testimonial-slide-blog span {
+        font-size: 1.1rem;
+    }
+
+	.testimonial-slide-blog p {
+        font-size: 1.2rem;
+    }
+
+
+
+	.blog img {
+		width: 300px;
+        height: 150px;
+	}
+
+	
+	.logo_footer_blog {
+     
+    }
+
+	.footer__div {
+        font-size: 3.1rem;
+        text-align: center;
+    }
+	/* Fim da página: blog_geral.html */
 }
 
 
 @media (max-width: 576px) {
 	.main {
-		width: 120%;
-		height: 120vh;
+		width: 100%;
+		height: 100vh;
 	}
 
-	.menu{
-		display: block;
-	}
 } 
 
+@media (max-width: 480px) {
 
+}
 
+@media (max-width: 320px) {
 
+}
 
