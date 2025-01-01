@@ -1486,6 +1486,7 @@ i.bx.bxl-whatsapp {
 	.main__header {
         width: 100%;
         height: 100vh;
+		overflow: hidden;
     }
 
 	main {
@@ -1583,6 +1584,7 @@ i.bx.bxl-whatsapp {
 	.menu-item {
 		font-size: 1.7rem;
 		padding: 40px 0;
+		margin-left: 1rem;
 	}
 
 	.content_actuation_area p.active {
@@ -1654,6 +1656,10 @@ i.bx.bxl-whatsapp {
         padding: 0 0px;
     }
 
+	#blog_title {
+		font-size: 6.5rem;
+	}
+
 	.testimonial-container-blog .testimonial-wrapper-blog {
 		padding: 2rem;
 	}
@@ -1681,14 +1687,59 @@ i.bx.bxl-whatsapp {
         text-align: center;
     }
 	/* Fim da página: blog_geral.html */
+	/* Início da página blog1.html */
+	#blog_title {
+		font-size: 6.5rem;
+	}
+	/* Fim da página blog1.html */
+	
 }
 
-
+	
 @media (max-width: 576px) {
-	.main {
-		width: 100%;
-		height: 100vh;
+	html {
+		-webkit-text-size-adjust: 70%;
 	}
+
+	.main__header {
+        width: 100%;
+        height: 100vh;
+		overflow: hidden;
+    }
+
+	main {
+		width: 100%;
+		height: 100%;
+		overflow-x: hidden;
+	}
+
+	.title .stroke {
+        width: 28rem;
+    }
+
+	.section-title {
+        font-size: 3.1rem;
+    }
+
+	#square_about {
+        left: 77%;
+    }
+
+	.section-title__square {
+        width: 77px;
+        height: 77px;
+    }
+
+	.about__p {
+		width: 14rem;
+	}
+
+	.benefits__num {
+        font-size: 4rem;
+
+    }
+
+
 
 } 
 

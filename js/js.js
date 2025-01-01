@@ -1,4 +1,9 @@
 // Verifique se o luxy.js está sendo corretamente inicializado. Normalmente, ele precisa ser configurado com um seletor para o wrapper que contém os elementos animados. No seu caso, você está usando o id="luxy".
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     if (luxy && typeof luxy.init === 'function') {
         luxy.init({
@@ -281,10 +286,79 @@ var swiper = new Swiper(".mySwiper", {
 					counter.innerText = target;
 				}
 			};
-
 			updateCount();
 		});
 	}
+
+
+
+
+
+
+
+
+
+
+// dark light mode
+	document.addEventListener('DOMContentLoaded', () => {
+		console.log('Dark Mode script carregado');
+		let darkModeIcon = document.querySelector('#darkMode-icon');
+
+	// Função para alternar o Dark Mode
+	function toggleDarkMode() {
+		darkModeIcon.classList.toggle('bx-sun');
+		document.body.classList.toggle('dark-mode');
+
+		// Salva o estado no Local Storage
+		if (document.body.classList.contains('dark-mode')) {
+		localStorage.setItem('dark-mode', 'enabled');
+		} else {
+		localStorage.setItem('dark-mode', 'disabled');
+		}
+	}
+
+	// Adiciona evento de clique no ícone
+	darkModeIcon.onclick = toggleDarkMode;
+
+	
+
+
+
+	});
+
+
+
+
+
+
+// /dark light mode
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	// Observador para ativar a contagem quando a seção for visível
 	const section = document.getElementById('counters');
@@ -331,18 +405,3 @@ menuItems.forEach(item => {
 
 
 // ================ dark light mode ================
-let darkModeIcon = document.querySelector('#darkMode-icon');
-darkModeIcon.onclick = () => {
-  darkModeIcon.classList.toggle('bx-sun');
-  document.body.classList.toggle('dark-mode');
-};
-
-
-
-
-
-
-
-
-
-

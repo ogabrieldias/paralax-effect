@@ -22,24 +22,25 @@
 <body>
     <section id="home">
         <header class="header__navegation"> <!-- Class Design header -->
-            
-            <a href="index.html#home"  class="logo_img_header">
-                <img src="https://www.advcarraro.com.br/wp-content/uploads/2024/08/Logo-Top-e1723023667984-1024x305.png" class="logo_img_header" alt="">
-            </a> <!-- Class logo | /logo -->
-                <nav class="navbar"> <!-- Class navbar -->
-        
-                    <a href="/index.html#home">Home</a> <!-- ID home | /home & Class active -->
-                    <a href="/index.html#about">About</a> <!-- ID About -->
-                    <a href="/index.html#about_us">About us</a> <!-- ID Services -->
-                    <a href="/index.html#benefits">Benefits</a> <!-- ID portfolio -->
-                    <a href="/index.html#portfolio">Portfolio</a> <!-- ID contato -->
-                    <a href="/index.html#services">Services</a> <!-- ID contato -->
-                </nav> <!-- /navbar-->
-    
-            <div class="bx bx-moon" id="darkMode-icon"></div>
-    
-            <div class="bx bx-menu" id="menu-icon"></div>
-        </header>
+		
+		<a href="index.html#home"  class="logo_img_header">
+			<img src="https://www.advcarraro.com.br/wp-content/uploads/2024/08/Logo-Top-e1723023667984-1024x305.png" class="logo_img_header" alt="">
+		</a> <!-- Class logo | /logo -->
+		<nav class="navbar"> <!-- Class navbar -->
+			
+			<a href="index.html#home" class="active" class="hideOnMobile">Home</a> <!-- ID home | /home & Class active -->
+			<a href="index.html#about" class="hideOnMobile">About</a> <!-- ID About -->
+			
+			<a href="index.html#benefits" class="hideOnMobile">Benefits</a> <!-- ID portfolio -->
+			<a href="index.html#portfolio" class="hideOnMobile">Portfolio</a> <!-- ID contato -->
+			<a href="index.html#testimonial" class="hideOnMobile">Testimonial</a> <!-- ID testimonial -->
+			<a href="index.html#services" class="hideOnMobile">Contact-me</a> <!-- ID contato -->
+		</nav> <!-- /navbar-->
+		
+		<div class="bx bx-moon" id="darkMode-icon"></div>
+
+		<div class="bx bx-menu" id="menu-icon"></div>
+	</header>
     </section>
 
 
@@ -52,7 +53,7 @@
     <!-- div .blog -->
     <section class="blog" id="blog">
         <div class="content">
-            <h2 class="section-title">Blo<span class="stroke">g</span>
+            <h2 class="section-title" id="blog_title">Blo<span class="stroke">g</span>
                 <span class="section-title__square"></span>
             </h2>
 
@@ -193,5 +194,7 @@
 	<!-- swiper js -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+
+    
 </body>
 </html>
