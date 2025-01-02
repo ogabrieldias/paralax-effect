@@ -2024,6 +2024,10 @@ i.bx.bxl-whatsapp {
 		left: auto;
 	}
 
+	.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+		bottom: var(--swiper-pagination-bottom, -20px) !important;
+	}
+
 	.serv__item-txt {
         font-size: 27px;
     }
