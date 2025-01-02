@@ -1872,6 +1872,11 @@ i.bx.bxl-whatsapp {
 		padding-right: 54px;
 		margin-right: 0px;
 		font-size: 20px;
+		margin-left: -0.6rem;
+    }
+
+	.header__marq-wrapp {
+		padding: 25px 30px;
 	}
 
 	.header__marq-star img {
@@ -1891,7 +1896,7 @@ i.bx.bxl-whatsapp {
     }
 
 	#square_about {
-        left: 80%;
+        left: 44%;
     }
 
     .benefits__num {
@@ -1957,7 +1962,7 @@ i.bx.bxl-whatsapp {
         margin: auto;
         object-fit: contain;
         transform: scale(1.5);
-		margin-top: 27rem;
+		margin-top: 69rem;
         margin-left: -2.5rem;
 		
     }
@@ -1966,10 +1971,6 @@ i.bx.bxl-whatsapp {
 		margin: 0 auto;
 		/* height: 77vh; */
 	}
-
-
-
-	
 
 	.description_portfolio {
 		text-align: center;
@@ -2054,6 +2055,24 @@ i.bx.bxl-whatsapp {
         letter-spacing: 8.3px;
     }
 
+	.social-container {
+        gap: 12px;
+        margin-top: 2rem;
+    }
+
+	.social-button {
+        width: 20rem;
+		font-size: 27px;
+    }
+
+	.footer__div {
+        font-size: 2.7rem;
+        letter-spacing: 9.7px;
+    }
+
+	.footer__div span[data-speed="200"]:nth-child(8) {
+		display: none; /* Oculta o hífen completamente */
+	}
 	/* Inicio da página: blog_geral.html */
 	.testimonial-content-blog .testimonial-slide-blog {
 		padding: 3rem 1rem;
