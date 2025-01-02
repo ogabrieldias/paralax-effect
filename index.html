@@ -22,34 +22,39 @@
 <body>
 	<section id="home">
 		
-	<header class="header__navegation"> <!-- Class Design header -->
-		
-		<a href="#home"  class="logo_img_header">
-			<img src="https://www.advcarraro.com.br/wp-content/uploads/2024/08/Logo-Top-e1723023667984-1024x305.png" class="logo_img_header" alt="">
-		</a> <!-- Class logo | /logo -->
-		<nav class="navbar"> <!-- Class navbar -->
+		<header class="header__navegation"> <!-- Class Design header -->
 			
-			<a href="#home" class="active" class="hideOnMobile">Home</a> <!-- ID home | /home & Class active -->
-			<a href="#about" class="hideOnMobile">About</a> <!-- ID About -->
+			<a href="#home"  class="logo_img_header">
+				<img src="https://www.advcarraro.com.br/wp-content/uploads/2024/08/Logo-Top-e1723023667984-1024x305.png" class="logo_img_header" alt="">
+			</a> <!-- Class logo | /logo -->
+			<nav class="navbar"> <!-- Class navbar -->
+				
+				<a href="#home" class="active hideOnMobile" >Home</a> <!-- ID home | /home & Class active -->
+				<a href="#about" class="hideOnMobile">About</a> <!-- ID About -->
+				
+				<a href="#benefits" class="hideOnMobile">Benefits</a> <!-- ID portfolio -->
+				<a href="#portfolio" class="hideOnMobile">Portfolio</a> <!-- ID contato -->
+				<a href="#testimonial" class="hideOnMobile">Testimonial</a> <!-- ID testimonial -->
+				<a href="#services" class="hideOnMobile">Contact-me</a> <!-- ID contato -->
+			</nav> <!-- /navbar-->
 			
-			<a href="#benefits" class="hideOnMobile">Benefits</a> <!-- ID portfolio -->
-			<a href="#portfolio" class="hideOnMobile">Portfolio</a> <!-- ID contato -->
-			<a href="#testimonial" class="hideOnMobile">Testimonial</a> <!-- ID testimonial -->
-			<a href="#services" class="hideOnMobile">Contact-me</a> <!-- ID contato -->
-		</nav> <!-- /navbar-->
+			<div class="bx bx-moon" id="darkMode-icon"></div>
+
+			<div class="bx bx-menu" id="menu-icon"></div>
+		</header>
+
 		
-		<div class="bx bx-moon" id="darkMode-icon"></div>
-
-		<div class="bx bx-menu" id="menu-icon"></div>
-	</header>
-	<!-- div .wrapp -->
-	</section>
-
 
 
 		<!-- div .header -->
 		<header class="main__header" id="home">
-			<h1 class="title" data-splitting><span class="title_paralax">Alpha Jurídico</span><span class="stroke">
+			
+
+
+
+
+			<h1 class="title" data-splitting><span class="title_paralax">Alpha Jurídico</span>
+				<span class="stroke">
 				a liderança que você precisa para enfrentar seus desafios <br>com confiança.</span></h1>
 			<div class="header__img">
 				<img src="https://neon.com.br/aprenda/wp-content/uploads/2023/10/quanto-ganha-juiz-1-1024x542.png" alt="1">
@@ -111,23 +116,21 @@
 
 					<ul class="benefits__list" id="about__list">
 						<li class="benefits__item">
-							<span class="benefits__num"  
+							<span class="benefits__num about__num__historia"  
 							id="about__num"   
 							data-speed="120">História</span> <!-- Proteção Legal -->
 							<p class="benefits__p">Fundado por dois amigos de faculdade apaixonados pelo Direito, o Alpha Jurídico nasceu com o propósito de oferecer um atendimento humano e personalizado. Desde então, já ajudamos mais de 500 clientes a resolverem conflitos de forma justa.
 							</p>
 						</li>
 						<li class="benefits__item">
-							<span class="benefits__num" id="about__num"
+							<span class="benefits__num  about__num__equipe_juridica" id="about__num"
+							
 							data-speed="-150">Equipe Jurídica</span> <!-- Segurança Jurídica -->
 							<p class="benefits__p">Carlos, especialista em Direito Penal, sempre diz: “Um caso bem defendido pode mudar uma vida.” Já Ana, mestre em Direito Civil, combina empatia e estratégia para resolver os conflitos mais desafiadores.
 							</p>
 						</li>
 						
-						
-
-
-						<span class="benefits__num" 
+						<span class="benefits__num about__num__areas__atuacao" 
 						id="about__num"
 						data-speed="-200">Áreas de Atuação</span>
 
@@ -193,9 +196,9 @@
 						<span class="section-title__square"></span>
 					</h2>
 
-					<ul class="benefits__list" id="num__benefits__list">
+					<ul class="benefits__list " id="num__benefits__list">
 						<li class="benefits__item">
-							<span class="benefits__num"  
+							<span class="benefits__num benefits__list__01"  
 							id="num__benefits"
 							data-speed="-150">/01</span> <!-- Proteção Legal -->
 							<p class="benefits__p">Garantia de defesa dos seus direitos e interesses, seja em litígios ou consultorias jurídicas.
@@ -203,29 +206,30 @@
 						</li>
 						
 						<li class="benefits__item">
-							<span class="benefits__num" id="num__benefits" data-speed="290">/02</span> <!-- Segurança Jurídica -->
+							<span class="benefits__num 
+							benefits__list__02" id="num__benefits" data-speed="290">/02</span> <!-- Segurança Jurídica -->
 							<p class="benefits__p">Acompanhamento especializado para assegurar que todas as ações estejam em conformidade com a legislação vigente.
 							</p>
 						</li>
 						<li class="benefits__item">
-							<span class="benefits__num" id="num__benefits" data-speed="-100">/03</span> <!-- Redução de Riscos -->
+							<span class="benefits__num benefits__list__03" id="num__benefits" data-speed="-100">/03</span> <!-- Redução de Riscos -->
 							<p class="benefits__p">Minimização de riscos legais por meio de planejamento e estratégias jurídicas adequadas.
 							</p>
 						</li>
 						<li class="benefits__item">
-							<span class="benefits__num" id="num__benefits" 
+							<span class="benefits__num benefits__list__04" id="num__benefits" 
 							data-speed="400">/04</span> <!-- Consultoria Preventiva -->
 							<p class="benefits__p">Orientação jurídica para evitar problemas futuros, reduzindo a necessidade de litígios.
 							</p>
 						</li>
 						<li class="benefits__item">
-							<span class="benefits__num" id="num__benefits" 
+							<span class="benefits__num benefits__list__05" id="num__benefits" 
 							data-speed="-500">/05</span> <!-- Defesa de Direitos -->
 							<p class="benefits__p">Proteção dos direitos fundamentais de indivíduos e empresas em casos de disputas judiciais.
 							</p>
 						</li>
 						<li class="benefits__item">
-							<span class="benefits__num" id="num__benefits" 
+							<span class="benefits__num benefits__list__06" id="num__benefits" 
 							data-speed="1000">/06</span> <!-- Resolução de Conflitos -->
 							<p class="benefits__p">Mediação e conciliação para solucionar disputas de forma mais amigável e menos onerosa que o processo judicial tradicional.
 							</p>
@@ -312,6 +316,45 @@
 							<div class="description">Cidades Atendidas</div>
 						</div>
 					</div>
+
+
+
+
+					<div class="counter-section_mobile counter-section_none" id="counter">
+						<div class="counter-container">
+							<div class="counter-wrapper">
+								<span class="counter-symbol">+</span>
+								<span class="counter" data-target="3000">0</span>
+							</div>
+							<div class="description">Processos Realizados</div>
+						</div>
+						<div class="counter-container">
+							<div class="counter-wrapper">
+								<span class="counter-symbol">+</span>
+								<span class="counter" data-target="45000">0</span>
+							</div>
+							<div class="description">Clientes <br>Atendidos</div>
+						</div>
+						<div class="counter-container">
+							<div class="counter-wrapper">
+								<span class="counter-symbol">+</span>
+								<span class="counter" data-target="40">0</span>
+							</div>
+							<div class="description">Cidades Atendidas</div>
+						</div>
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

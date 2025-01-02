@@ -217,7 +217,7 @@ window.onscroll = () => {
   });
 
   // Sticky navbar
-  let header = document.querySelector('.header');
+  let header = document.querySelector('.header__navegation');
   header.classList.toggle('sticky', window.scrollY > 100);
 };
 
@@ -266,29 +266,49 @@ var swiper = new Swiper(".mySwiper", {
 // <!-- SCRIPT PARA CONTAGEM DE NUMEROS E TESTIMONIAL -->
 
 	
-	// Função para animar os números
-	function animateCounters() {
-		const counters = document.querySelectorAll(".counter");
-		const speed = 200; // Velocidade da animação
 
-		counters.forEach(counter => {
-			const updateCount = () => {
-				const target = +counter.getAttribute("data-target");
-				const count = +counter.innerText;
 
-				// Incremento por frame
-				const increment = target / speed;
 
-				if (count < target) {
-					counter.innerText = Math.ceil(count + increment);
-					setTimeout(updateCount, 20); // Ajuste do tempo
-				} else {
-					counter.innerText = target;
-				}
-			};
-			updateCount();
-		});
-	}
+
+// Função para animar os números 
+function animateCounters(counter) {
+	const speed = 200; // Velocidade da animação
+	const updateCount = () => {
+	  const target = +counter.getAttribute("data-target"); // Converte o valor do atributo data-target para número
+	  const count = +counter.innerText; // Valor atual do contador
+	  const increment = target / speed; // Calcula o incremento
+  
+	  if (count < target) {
+		counter.innerText = Math.ceil(count + increment); // Atualiza o número com incremento
+		setTimeout(updateCount, 10); // Chama novamente até alcançar o target
+	  } else {
+		counter.innerText = target; // Garante que o valor final será exatamente o target
+	  }
+	};
+	updateCount();
+  }
+  
+  document.addEventListener("DOMContentLoaded", () => {
+	// Função que verifica se o contador está visível
+	const observer = new IntersectionObserver((entries, observer) => {
+	  entries.forEach(entry => {
+		if (entry.isIntersecting) {
+		  // Seleciona todos os contadores dentro da seção
+		  const counters = entry.target.querySelectorAll(".counter");
+		  counters.forEach(counter => animateCounters(counter)); // Inicia a animação para todos os contadores
+		  observer.unobserve(entry.target); // Para de observar a seção depois que foi visível
+		}
+	  });
+	}, { threshold: 0.5 }); // Inicia a animação quando 50% da seção estiver visível
+  
+	// Observa as seções que contêm os contadores (tanto para desktop quanto para mobile)
+	const countersSection = document.getElementById("counters");
+	const countersMobileSection = document.getElementById("counter");
+	
+	observer.observe(countersSection); // Observa a seção desktop
+	observer.observe(countersMobileSection); // Observa a seção mobile
+  });
+
 
 
 
@@ -319,17 +339,7 @@ var swiper = new Swiper(".mySwiper", {
 
 	// Adiciona evento de clique no ícone
 	darkModeIcon.onclick = toggleDarkMode;
-
-	
-
-
-
 	});
-
-
-
-
-
 
 // /dark light mode
 

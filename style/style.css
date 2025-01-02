@@ -13,6 +13,10 @@
     --shadow-color: rgba(0, 0, 0, .2);
 }
 
+.counter-section_none {
+	display: none;
+}
+
 * {
 	box-sizing: border-box;
 	font-family: 'Syne', sandiretoraprincipals-serif;
@@ -485,6 +489,14 @@ i.bx.bx-chevrons-left, i.bx.bx-chevrons-right {
 	display: inline-block;
 	will-change: transform;
 }
+
+
+
+
+
+
+
+
 
 .title .stroke {
 	display: inline-block;
@@ -1168,7 +1180,7 @@ i.bx.bxl-whatsapp {
 	.header__navegation {
 		padding: 1rem 2%;
 	}
-	
+
 	.footer__div {
 		font-size: 3.4rem;
 	}
@@ -1609,8 +1621,9 @@ i.bx.bxl-whatsapp {
 		font-size: 2.7rem;
 	}
 	
+
 	.counter-section {
-		gap: 60px;
+		gap: 20px;
 	}
 
 	.counter-wrapper {
@@ -1713,6 +1726,18 @@ i.bx.bxl-whatsapp {
 		overflow-x: hidden;
 	}
 
+	.bx.bx-moon {
+        font-size: 2.7rem;
+    }
+
+    #menu-icon {
+        font-size: 2.7rem;
+    }
+
+	.about__wrapp {
+		margin-right: 6rem;
+	}
+
 	.title .stroke {
         width: 28rem;
     }
@@ -1722,7 +1747,7 @@ i.bx.bxl-whatsapp {
     }
 
 	#square_about {
-        left: 77%;
+        left: 118%;
     }
 
 	.section-title__square {
@@ -1731,25 +1756,288 @@ i.bx.bxl-whatsapp {
     }
 
 	.about__p {
-		width: 14rem;
+        width: 16rem;
+    }
+
+	.container {
+		display: block;
+	}
+
+	#title_about_actuation {
+		text-align: center;
+	}
+
+	#familia, #sucessoes, #trabalhista, #empresarial, #imobiliario {
+		padding: 1rem;
+	}
+
+	.button-container {
+		text-align: center;
 	}
 
 	.benefits__num {
         font-size: 4rem;
-
     }
 
+	.about__num__historia {
+        margin-left: 8rem;
+    }
 
+    .about__num__areas__atuacao {
+        margin-left: 4rem;
+    }
+
+	.benefits__list__01 {
+		margin-right: 15rem;
+	}
+
+	.benefits__list__02 {
+		margin-right: 15rem;
+	}
+
+	.serv__item-txt {
+        font-size: 33px;
+        padding: 1rem;
+   }
+
+	.header_contact {
+    	width: 90%;
+	}
+
+	.content_contact {
+		width: 90%;
+	}
+
+	.logo_footer_blog {
+        width: 227px;
+        height: 100px;
+    }
+
+	.social-container {
+		gap: 15px;
+	}
+
+    .social-button {
+        width: 14rem;
+    }
+
+	.footer__div {
+        font-size: 2.2rem;
+    }
 
 } 
 
 @media (max-width: 480px) {
-
-	
-	.main {
-		width: 100%;
-		height: 100vh;
+	html {
+		-webkit-text-size-adjust: 70%;
 	}
+
+	.main__header {
+        width: 100%;
+        height: 100vh;
+		overflow: hidden;
+    }
+
+	main {
+		width: 100%;
+		height: 100%;
+		overflow-x: hidden;
+	}
+
+	.logo_img_header {
+        width: 160px;
+        height: 56px;
+    }
+
+    #menu-icon {
+        margin-left: 0.3rem;
+    }
+
+	.title_paralax {
+		display: inline-grid;
+	}
+
+    .title .stroke {
+        width: 22.7rem;
+		word-break: break-word; /* Para navegadores mais antigos */
+		overflow-wrap: break-word; /* Para navegadores modernos */
+		hyphens: auto;/* Adiciona hífens automáticos se necessário */
+    }
+
+	.char {
+		display: inline;
+	}
+	
+	.header__marq-txt {
+		padding-right: 54px;
+		margin-right: 0px;
+		font-size: 20px;
+	}
+
+	.header__marq-star img {
+        width: 45%;
+        height: 45%;
+    }
+
+	.about__wrapp {
+        padding: 0rem;
+        display: block;
+    }
+
+	.about__img, .about__txt {
+        width: 100%;
+        margin: 3rem;
+        height: auto;
+    }
+
+	#square_about {
+        left: 80%;
+    }
+
+    .benefits__num {
+        font-size: 3.5rem;
+    }
+
+	.about__num__historia {
+        margin-left:4rem;
+    }
+
+	.benefits__p {
+        font-size: 27px;
+    }
+
+	.about__num__equipe_juridica {
+        margin-left: -8rem;
+        text-align: center;
+    }
+
+	.about__num__areas__atuacao {
+		margin-left: -8rem;
+		text-align: center;
+	}
+
+	.benefits__list__01 {
+        margin-left: -2rem;
+    }
+
+	.benefits__list__02 {
+        margin-left: 16rem;
+    }
+
+	.benefits__list__03 {
+        margin-left: -5rem;
+    }
+
+	.benefits__list__04 {
+        margin-left: 9.4rem;
+	}
+
+	.benefits__list__05 {
+        margin-left: -9rem;
+    }
+
+	.benefits__list__06 {
+        margin-left: 8rem;
+    }
+
+    .benefits__p {
+        font-size: 24px;
+        width: 15rem;
+    }
+
+	.section-title {
+        font-size: 2.6rem;
+    }
+
+	.work__wrapp {
+        width: 120%;
+        height: auto;
+        display: block;
+        margin: auto;
+        object-fit: contain;
+        transform: scale(1.5);
+        margin-top: 50rem;
+        margin-left: -2rem;
+    }
+
+	.description_portfolio {
+		text-align: center;
+		margin-top: 5px;
+		background-color: var(--gold-color);
+		padding: 0.5rem;
+		font-size: 0.77rem;
+	}
+
+	#testimonial {
+		margin-top: 2rem;
+	}
+
+	#portfolio {
+		padding-bottom: 30rem;
+	}
+
+	.counter-section_mobile {
+		display: flex;
+		justify-content: center;
+		align-items: stretch;
+		flex-direction: column-reverse;
+	}
+
+	.counter-section_none {
+		display: block;
+	}
+
+	.counter-section {
+		display: none;
+	}
+
+	.counter-section_mobile {
+		display: flex;
+		justify-content: center;
+		gap: 100px;
+	}
+	
+	.testimonial-slide img {
+		width: 10rem;
+		height: 10rem;
+	}
+
+	.testimonial-container .testimonial-wrapper {
+        padding: 0rem;
+    }
+	.testimonial-container {
+		padding: 5rem 0rem;
+	}
+	.swiper-button-prev,.swiper-rtl .swiper-button-next {
+		left: var(--swiper-navigation-sides-offset,-5px)!important;
+		right: auto;
+	}
+
+	.swiper-button-next, .swiper-rtl .swiper-button-prev {
+		right: var(--swiper-navigation-sides-offset, -5px)!important;
+		left: auto;
+	}
+
+	.serv__item-txt {
+        font-size: 27px;
+    }
+
+	.footer_blog_section {
+        display: flex;
+        flex-direction: column;
+		justify-content: center;
+		gap: 1rem;
+    }
+
+	.logo_footer_blog {
+        width: 297px;
+        height: 100px;
+    }
+
+	.footer__div {
+        font-size: 2rem;
+        letter-spacing: 8.3px;
+    }
 }
 
 @media (max-width: 320px) {
