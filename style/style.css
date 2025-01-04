@@ -1571,9 +1571,6 @@ i.bx.bxl-instagram {
         display: block;
     }
 
-
-
-
 	.hideOnMobile {
 		display: none;
 	}
@@ -1601,22 +1598,6 @@ i.bx.bxl-instagram {
 	}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	.bx.bx-moon	 {
         font-size: 3.7rem;
 		z-index: 1;
@@ -1629,6 +1610,22 @@ i.bx.bxl-instagram {
         margin-left: 2rem;
     }
 	
+	.header__img {
+        position: absolute;
+        width: 100%;
+        height: 60%;
+        top: 8.6%;
+        /* right: 35%; */
+        clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+        overflow: hidden;
+        padding: 0.7rem;
+        margin: auto;
+        display: flex
+;
+        left: -50%;
+        right: -50%;
+    }
+
 	.title_paralax {
         font-size: 2.72rem;
     }
