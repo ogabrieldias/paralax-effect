@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		})
 		gsap.from('.work__item-img img', {
-			scale: 1.6,
+			scale: 1.1,
 			scrollTrigger: {
 				trigger: '.work__wrapp',
 				start: 'top bottom',
@@ -341,32 +341,7 @@ function animateCounters(counter) {
 	darkModeIcon.onclick = toggleDarkMode;
 	});
 
-// /dark light mode
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// dark light mode
 
 
 
