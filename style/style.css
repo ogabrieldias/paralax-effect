@@ -1641,6 +1641,11 @@ i.bx.bxl-instagram {
 
     .serv__item-txt {
         font-size: 25px;
+		width: 22.7rem;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
     }
 
     .serv__item-arrow img {
