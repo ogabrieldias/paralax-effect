@@ -355,10 +355,7 @@ i.bx.bx-chevrons-left, i.bx.bx-chevrons-right {
     transform: translateY(-20%);
 }
 
-.social-button:hover {
-	background-color: #444; /* Fundo mais claro ao passar o mouse */
-	cursor: pointer;
-}
+
 
 
 /* section /footer_blog_section */
