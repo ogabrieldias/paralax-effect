@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				start: 'top top',
 				scrub: 1.9
 			},
-			xPercent: -70
+			xPercent: -1170
 		})
 		gsap.to('.header__img img', {
 			scrollTrigger: {
